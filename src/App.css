@@ -1,38 +1,115 @@
-.App {
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  background-color: aqua;
+}
+
+.app {
+  background-color: #f5f6fa;
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar .navbar-brand {
+  color: aqua;
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+.info-box-card .card .card-body {
+  padding: 1rem !important;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar p {
+  margin-bottom: 0px;
+}
+
+.footer {
+  background-color: #000;
+  padding: 10px 0px;
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer p {
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer .designed {
+  font-size: 14px;
+  color: #f5f5f5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer .designed a {
+  color: aqua;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.form-select:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-accord {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.accordion-header button {
+  font-weight: 500;
+}
+
+.card-body canvas {
+  width: 100% !important;
+  height: 250px !important;
+}
+
+.info-main-card {
+  padding: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }

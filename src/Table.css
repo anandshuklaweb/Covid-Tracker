@@ -1,0 +1,6 @@
+.table {
+  overflow: scroll;
+  height: 440px;
+
+  overflow-x: hidden;
+}
